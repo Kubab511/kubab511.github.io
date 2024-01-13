@@ -54,6 +54,18 @@ p {
   color: var(--secondary-color-2);
 }
 
+.arrow-up img {
+
+  position: fixed;
+  transform: rotate(180deg);
+  left: 20px;
+  bottom: 20px;
+}
+
+#arrow-up {
+  display: none;
+}
+
 /* TRANSITION */
 
 a,

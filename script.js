@@ -51,3 +51,15 @@ function setLightMode() {
     icon.src = icon.getAttribute("src-light");
   });
 }
+
+const arrowUp = document.getElementById("arrow-up");
+
+window.onscroll = function() {scrollFunc()};
+
+function scrollFunc() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    arrowUp.style.display = "block";
+  } else {
+    arrowUp.style.display = "none";
+  }
+}
