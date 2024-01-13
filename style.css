@@ -435,12 +435,6 @@ article .icon {
   background: var(--primary-color-2);
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
 .project-title {
   margin: 1rem;
   color: var(--secondary-color);
@@ -449,6 +443,10 @@ article .icon {
 .project-btn {
   color: var(--secondary-color);
   border-color: var(--container-border);
+}
+
+.project-p {
+  margin-bottom: 2rem;
 }
 
 /* CONTACT */
