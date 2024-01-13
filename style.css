@@ -490,6 +490,7 @@ footer p {
   text-align: center;
 }
 
-footer a:hover {
+.github-link:hover {
   text-decoration: none;
+  color: var(--button-text-hover);
 }
