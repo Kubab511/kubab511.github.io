@@ -288,6 +288,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  align-self: end;
 }
 
 .btn {
@@ -367,6 +368,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
+  display: grid;
   background: var(--primary-color-2);
   border-radius: 2rem;
   border: var(--button-border);
@@ -441,6 +443,7 @@ article .icon {
 }
 
 .project-btn {
+  position: relative;
   color: var(--secondary-color);
   border-color: var(--container-border);
 }

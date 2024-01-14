@@ -31,6 +31,9 @@
   .arrow {
     display: none;
   }
+  .arrow-up {
+    display: none;
+  }
   section,
   .section-container {
     height: fit-content;
