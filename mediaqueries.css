@@ -1,8 +1,15 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-height: 680px) {
+  section {
+    height: 580px;
+    padding: 20px;
+  }
   #profile {
-    height: 83vh;
+    height: 30rem;
     margin-bottom: 6rem;
   }
+}
+
+@media screen and (max-width: 1400px) {
   .about-containers {
     flex-wrap: wrap;
   }

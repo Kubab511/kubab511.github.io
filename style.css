@@ -83,7 +83,7 @@ nav,
 
 nav {
   justify-content: space-around;
-  height: 17vh;
+  height: 5rem;
 }
 
 .nav-links {
@@ -230,7 +230,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 75vh;
 }
 
 .section__pic-container {
