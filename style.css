@@ -55,7 +55,6 @@ p {
 }
 
 .arrow-up img {
-
   position: fixed;
   transform: rotate(180deg);
   left: 20px;
@@ -265,6 +264,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  padding-bottom: 1rem;
   color: var(--secondary-color);
 }
 
