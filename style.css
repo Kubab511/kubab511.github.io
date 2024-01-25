@@ -339,6 +339,11 @@ section {
   position: relative;
 }
 
+#about a:hover {
+  text-decoration: none;
+  color: var(--button-text-hover);
+}
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
