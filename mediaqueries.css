@@ -4,8 +4,13 @@
     padding: 20px;
   }
   #profile {
-    height: 30rem;
-    margin-bottom: 6rem;
+    height: 36rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #profile {
+    margin-bottom: 5rem;
   }
 }
 
@@ -17,6 +22,9 @@
   #projects,
   #experience {
     height: fit-content;
+  }
+  #about {
+    margin-bottom: 6rem;
   }
 }
 
