@@ -63,7 +63,7 @@
 @media screen and (max-width: 800px) {
   #contact,
   footer {
-    height: 8rem;
+    height: 18vh;
     flex-direction: column;
     margin-top: 2rem;
   }
@@ -73,10 +73,6 @@
   }
   article {
     font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-containers,
   .contact-info-upper-container,
