@@ -1,3 +1,34 @@
+const english = document.querySelectorAll(".en");
+const polish = document.querySelectorAll(".pl");
+
+function toggleLang(language) {
+  localStorage.setItem("language", language);
+
+  if(language === "Polish") {
+    english.forEach((element) => {
+      element.style.display = "none";
+    });
+    polish.forEach((element) => {
+      element.style.display = "";
+    });
+  } else {
+    english.forEach((element) => {
+      element.style.display = "";
+    });
+    polish.forEach((element) => {
+      element.style.display = "none";
+    });
+  }
+}
+
+
+let language = localStorage.getItem("language");
+
+toggleLang(language);
+
+
+
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
