@@ -8,6 +8,7 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  #about,
   #contact,
   #projects,
   #experience {
