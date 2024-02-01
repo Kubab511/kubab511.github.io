@@ -59,8 +59,8 @@ p {
 .arrow-up img {
   position: fixed;
   transform: rotate(180deg);
-  right: 17px;
-  bottom: 17px;
+  right: 15px;
+  bottom: 15px;
 }
 
 #arrow-up {
