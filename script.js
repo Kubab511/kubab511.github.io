@@ -1,47 +1,18 @@
+/*Set constants used in the code*/
 const english = document.querySelectorAll(".en");
 const polish = document.querySelectorAll(".pl");
-
-function toggleLang(language) {
-  localStorage.setItem("language", language);
-
-  if(language === "Polish") {
-    english.forEach((element) => {
-      element.style.display = "none";
-    });
-    polish.forEach((element) => {
-      element.style.display = "";
-    });
-  } else {
-    english.forEach((element) => {
-      element.style.display = "";
-    });
-    polish.forEach((element) => {
-      element.style.display = "none";
-    });
-  }
-}
-
-
-let language = localStorage.getItem("language");
-
-toggleLang(language);
-
-
-
-
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
-
-// Dark / light mode
-
+const language = localStorage.getItem("language");
 const btn = document.getElementById("modeToggle");
 const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const currentTheme = localStorage.getItem("theme");
+const arrowUp = document.getElementById("arrow-up");
+
+
+/*Code triggered on page load*/
+toggleLang(language);
+
+window.onscroll = function() {scrollFunc()};
 
 if (currentTheme === "dark") {
   setDarkMode();
@@ -54,6 +25,8 @@ btn.addEventListener("click", function () {
 btn2.addEventListener("click", function () {
   setTheme();
 });
+
+/*Functions used in the code*/
 
 function setTheme() {
   let currentTheme = document.body.getAttribute("theme");
@@ -83,14 +56,37 @@ function setLightMode() {
   });
 }
 
-const arrowUp = document.getElementById("arrow-up");
-
-window.onscroll = function() {scrollFunc()};
-
 function scrollFunc() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     arrowUp.style.display = "block";
   } else {
     arrowUp.style.display = "none";
   }
+}
+
+function toggleLang(language) {
+  localStorage.setItem("language", language);
+
+  if(language === "Polish") {
+    english.forEach((element) => {
+      element.style.display = "none";
+    });
+    polish.forEach((element) => {
+      element.style.display = "";
+    });
+  } else {
+    english.forEach((element) => {
+      element.style.display = "";
+    });
+    polish.forEach((element) => {
+      element.style.display = "none";
+    });
+  }
+}
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
