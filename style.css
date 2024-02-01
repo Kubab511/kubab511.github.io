@@ -15,6 +15,7 @@
   --button-border: rgb(53, 53, 53) 0.1rem solid;
   --button-border-2: rgb(255, 255, 255) 0.1rem solid;
   --container-border: rgb(163, 163, 163);
+  --footer-background: #E2DFD2;
 }
 
 /* Dark Mode*/
@@ -30,6 +31,7 @@
   --button-border: rgb(202, 202, 202) 0.1rem solid;
   --button-border-2: rgb(0, 0, 0) 0.1rem solid;
   --container-border: rgb(92, 92, 92);
+  --footer-background: black;
 }
 
 * {
@@ -57,8 +59,8 @@ p {
 .arrow-up img {
   position: fixed;
   transform: rotate(180deg);
-  left: 20px;
-  bottom: 20px;
+  right: 17px;
+  bottom: 17px;
 }
 
 #arrow-up {
@@ -81,8 +83,10 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
-  height: 5rem;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  height: 10vh;
+  align-items: start;
 }
 
 .nav-links {
@@ -229,7 +233,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 83vh;
+  height: 84vh;
   margin-bottom: 0;
 }
 
@@ -363,12 +367,6 @@ section {
 
 .about-pic {
   border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
 }
 
 .details-container {
@@ -505,12 +503,20 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  background-color: var(--footer-background);
+  margin: 0;
+  height: 4rem;
+  display: flex;
+  align-content: center;
+}
+
+.footer-name {
+  font-size: 2rem;
 }
 
 footer p {
   text-align: center;
+  margin: auto;
 }
 
 .github-link:hover {

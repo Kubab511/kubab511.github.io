@@ -1,13 +1,3 @@
-@media screen and (max-height: 680px) {
-  section {
-    height: 580px;
-    padding: 20px;
-  }
-  #profile {
-    height: 36rem;
-  }
-}
-
 @media screen and (max-height: 600px) {
   #profile {
     margin-bottom: 5rem;
@@ -69,10 +59,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 8rem;
+    flex-direction: column;
+    margin-top: 2rem;
   }
   #profile {
     height: 83vh;
