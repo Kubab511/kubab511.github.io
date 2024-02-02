@@ -158,10 +158,11 @@ nav a:hover {
   top: 100%;
   right: 0;
   background-color: var(--footer-background);
-  width: fit-content;
+  width: 20vh;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  margin-top: -100%;
+  transition: all 0.5s;
 }
 
 .menu-links a {
@@ -187,15 +188,10 @@ nav a:hover {
 }
 
 .menu-links.open {
+  margin-top: 10px;
   max-height: 400px;
   width: 45vw;
-  /*animation: fade-in 1s ease;*/
 }
-
-/*@keyframes fade-in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}*/
 
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
