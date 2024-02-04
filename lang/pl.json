@@ -1,0 +1,22 @@
+{
+	"name": "Kuba",
+	"bio": "",
+	"hero-greeting": "Cześć, jestem",
+	"email-me": "Napisz do mnie",
+	"cv": "Pobierz CV",
+	"about": "O Mnie",
+	"projects": "Projekty",
+	"contact": "Kontakt",
+	"about-me": "O Mnie",
+	"description": "Jestem Kuba, 19 letni student informatyki na TU Dublin. Moie zainteresowania to m.in. cyberbezpieczeństwo i kryptografia. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.",
+	"skills": "Umiejętności",
+	"education": "Edukacja",
+	"experience": "Doświadczenie",
+	"p1-title": "Moje portfolio",
+	"p1-description": "Strona internetowa o mnie zrobiona z pomocą next.js",
+	"all": "Wszystkie",
+	"web": "Web",
+	"mobile": "Mobilne",
+	"know-more": "Masz pytania?",
+	"contact-paragraph": "Obecnie szukam nowych możliwości, moja skrzynka pocztowa jest zawsze otwarta. Jeśli chcesz się dowiedzieć więcej o mnie, postaram się jak najszybciej odpowiedzieć na każde pytanie."
+}

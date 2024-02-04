@@ -1,0 +1,22 @@
+{
+	"name": "Kuba",
+	"bio": "",
+	"hero-greeting": "Hallo, ich bin",
+	"email-me": "E-Mail an mich",
+	"cv": "CV herunterladen",
+	"about": "Über Mich",
+	"projects": "Projekte",
+	"contact": "Kontakt",
+	"about-me": "Über Mich",
+	"description": "Ich bin Kuba, ein 19-jähriger Informatikstudent an der TU Dublin. Zu meinen Interessen gehören Cybersicherheit und Kryptographie. Ich studiere Informatik seit der High School, wo ich den Preis für den besten Informatikstudenten erhielt. In meiner Freizeit gehe ich gerne wandern, fotografieren und Ski fahren.",
+	"skills": "Fähigkeiten",
+	"education": "Bildung",
+	"experience": "Erfahrung",
+	"p1-title": "Meine Portfolio",
+	"p1-description": "Eine Website über mich, erstellt mit next.js",
+	"all": "Alle",
+	"web": "Web",
+	"mobile": "Mobile",
+	"know-more": "Mehr wissen wollen?",
+	"contact-paragraph": "Ich bin derzeit auf der Suche nach neuen Möglichkeiten, meine Mailbox ist immer offen. Wenn Sie mehr über mich erfahren möchten, werde ich versuchen, alle Fragen so schnell wie möglich zu beantworten."
+}
