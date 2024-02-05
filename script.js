@@ -4,16 +4,10 @@ const divIDs = ['skills-div', 'education-div', 'experience-div', 'languages-div'
 
 aboutMeButton('skills', 'skills-div');
 
-function loadLang() {
-  const lang = localStorage.getItem("lang");
-
-  (lang === "en") ? window.location.href = "/index.html" : window.location.href = `/${lang}/index.html`;
-}
-
 function langChange(lang) {
   localStorage.setItem("lang", lang);
   
-  (lang === "en") ? window.location.href = "/index.html" : window.location.href = `/${lang}/index.html`;
+  (lang === "en") ? window.location.href = "/" : window.location.href = `/${lang}`;
 }
 
 function aboutMeButton(id, divID) {
