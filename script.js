@@ -19,3 +19,11 @@ function aboutMeButton(id, divID) {
     (i === divID) ? document.getElementById(i).style.display = "block" : document.getElementById(i).style.display = "none"
   })
 }
+
+function toggleMenu(toggle) {
+  (toggle === 'open') ? document.getElementById("hamburger").style.display = "none" : document.getElementById("hamburger").style.display = "flex";
+
+  (toggle === 'open') ? document.getElementById("x-icon").style.display = "flex" : document.getElementById("x-icon").style.display = "none";
+
+  (toggle === 'open') ? document.getElementById("mobile-menu").style.display = "flex" : document.getElementById("mobile-menu").style.display = "none";
+}
