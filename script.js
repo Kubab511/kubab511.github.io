@@ -1,92 +1,27 @@
-/*Set constants used in the code*/
-const english = document.querySelectorAll(".en");
-const polish = document.querySelectorAll(".pl");
-const language = localStorage.getItem("language");
-const btn = document.getElementById("modeToggle");
-const btn2 = document.getElementById("modeToggle2");
-const themeIcons = document.querySelectorAll(".icon");
-const currentTheme = localStorage.getItem("theme");
-const arrowUp = document.getElementById("arrow-up");
+const lang = localStorage.getItem("lang");
+const buttonIDs = ['skills', 'education', 'experience', 'languages'];
+const divIDs = ['skills-div', 'education-div', 'experience-div', 'languages-div'];
 
+aboutMeButton('skills', 'skills-div');
 
-/*Code triggered on page load*/
-toggleLang(language);
+function loadLang() {
+  const lang = localStorage.getItem("lang");
 
-window.onscroll = function() {scrollFunc()};
-
-if (currentTheme === "dark") {
-  setDarkMode();
+  (lang === "en") ? window.location.href = "/index.html" : window.location.href = `/${lang}/index.html`;
 }
 
-btn.addEventListener("click", function () {
-  setTheme();
-});
-
-btn2.addEventListener("click", function () {
-  setTheme();
-});
-
-/*Functions used in the code*/
-
-function setTheme() {
-  let currentTheme = document.body.getAttribute("theme");
-
-  if (currentTheme === "dark") {
-    setLightMode();
-  } else {
-    setDarkMode();
-  }
+function langChange(lang) {
+  localStorage.setItem("lang", lang);
+  
+  (lang === "en") ? window.location.href = "/index.html" : window.location.href = `/${lang}/index.html`;
 }
 
-function setDarkMode() {
-  document.body.setAttribute("theme", "dark");
-  localStorage.setItem("theme", "dark");
+function aboutMeButton(id, divID) {
+  buttonIDs.forEach((i) => {
+    (i === id) ? document.getElementById(i).style.color = "white" : document.getElementById(i).style.color = "rgb(148 163 184)"
+  })
 
-  themeIcons.forEach((icon) => {
-    icon.src = icon.getAttribute("src-dark");
-  });
-}
-
-function setLightMode() {
-  document.body.removeAttribute("theme");
-  localStorage.setItem("theme", "light");
-
-  themeIcons.forEach((icon) => {
-    icon.src = icon.getAttribute("src-light");
-  });
-}
-
-function scrollFunc() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    arrowUp.style.display = "block";
-  } else {
-    arrowUp.style.display = "none";
-  }
-}
-
-function toggleLang(language) {
-  localStorage.setItem("language", language);
-
-  if(language === "Polish") {
-    english.forEach((element) => {
-      element.style.display = "none";
-    });
-    polish.forEach((element) => {
-      element.style.display = "";
-    });
-  } else {
-    english.forEach((element) => {
-      element.style.display = "";
-    });
-    polish.forEach((element) => {
-      element.style.display = "none";
-    });
-  }
-}
-
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+  divIDs.forEach((i) => {
+    (i === divID) ? document.getElementById(i).style.display = "block" : document.getElementById(i).style.display = "none"
+  })
 }
