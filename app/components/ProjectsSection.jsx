@@ -3,13 +3,12 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
 const projectsData = [
   {
     id: 1,
-    title: "p1-title",
-    description: "p1-description",
+    title: "My portfolio",
+    description: "A website about me made using next.js",
     image: "/images/projects/1.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/Kubab511/kubab511.github.io",
@@ -18,7 +17,6 @@ const projectsData = [
 ];
 
 const ProjectsSection = () => {
-  const { t } = useTranslation();
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -39,24 +37,24 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        {t("projects")}
+        Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
-          name={t("all")}
+          name={"All"}
           isSelected={tag === "All"}
           tag={"All"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name={t("web")}
+          name={"Web"}
           isSelected={tag === "Web"}
           tag={"Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name={t("mobile")}
+          name={"Mobile"}
           isSelected={tag === "Mobile"}
           tag={"Mobile"}
         />
@@ -72,8 +70,8 @@ const ProjectsSection = () => {
           >
             <ProjectCard
               key={project.id}
-              title={t(project.title)}
-              description={t(project.description)}
+              title={project.title}
+              description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}

@@ -4,10 +4,8 @@ import GithubIcon from "/public/github-icon.svg";
 import LinkedinIcon from "/public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
 
 const EmailSection = () => {
-  const { t } = useTranslation();
 
   return (
     <section
@@ -16,11 +14,11 @@ const EmailSection = () => {
     >
       <div className="z-9">
         <h5 className="text-xl font-bold text-white my-2">
-          {t("know-more")}
+          Have any questions?
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          {t("contact-paragraph")}
+          I&apos;m currently looking for new opportunities, my inbox is always open. If you have any questions, I&apos;ll try my best to get back to you as soon as possible!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link target="_blank" href="https://github.com/Kubab511">
