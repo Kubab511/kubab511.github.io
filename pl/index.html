@@ -40,7 +40,43 @@
               </div>
             </ul>
           </div>
+          <div class="block md:hidden">
+            <button onclick="toggleMenu('open')" id="hamburger" class="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <button onclick="toggleMenu('close')" id="x-icon" class="hidden items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+              </svg>              
+            </button>
+          </div>
         </div>
+        <ul id="mobile-menu" class="hidden flex-col py-4 items-center">
+          <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+            <a href="#about">About</a>
+          </li>
+          <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+            <a href="#contact">Contact</a>
+          </li>
+          <div class="flex flex-row justify-between items-center">
+            <li class="block mr-1 py-2 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+              <img class="h-7" src="/assets/globe.png" alt="globe">
+            </li>
+            <li>
+              <select name="lang" class="block bg-[#191919] py-1 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded-full hover:text-white text-center hover:cursor-pointer">
+                <option onclick="langChange(value)" selected value="en">English</option>
+                <option onclick="langChange(value)" value="pl">Polski</option>
+                <option onclick="langChange(value)" value="de">Deutsch</option>
+                <option onclick="langChange(value)" value="no">Norsk</option>
+              </select>
+            </li>
+          </div>
+        </ul>
       </nav>
       <section class="lg:py-16">
         <div class="grid grid-cols-1 sm:grid-cols-12">
