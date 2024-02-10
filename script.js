@@ -1,8 +1,13 @@
-const lang = localStorage.getItem("lang");
 const buttonIDs = ['skills', 'education', 'experience', 'languages'];
 const divIDs = ['skills-div', 'education-div', 'experience-div', 'languages-div'];
 
 aboutMeButton('skills', 'skills-div');
+
+function loadLang() {
+  const lang = localStorage.getItem("lang");
+  
+  (lang === "en") ? window.location.href = "/" : window.location.href = `/${lang}`;
+}
 
 function langChange(lang) {
   localStorage.setItem("lang", lang);
