@@ -102,30 +102,32 @@
             <p class="text-slate-400 lg:text-lg">
               I&apos;m Kuba, a 19 year old computer science student at TU Dublin. My interests include cybersecurity and cryptography. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
             </p>
-            <button 
-              class="pr-2 mt-3 underline decoration-2 font-bold text-slate-400 hover:text-white" 
-              id="skills"
-              onclick="aboutMeButton('skills', 'skills-div')">
-              Skills
-            </button>
-            <button 
-              class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
-              id="education"
-              onclick="aboutMeButton('education', 'education-div')">
-              Education
-            </button>
-            <button 
-              class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
-              id="experience"
-              onclick="aboutMeButton('experience', 'experience-div')">
-              Experience
-            </button>
-            <button 
-              class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
-              id="languages"
-              onclick="aboutMeButton('languages', 'languages-div')">
-              Languages
-            </button>
+            <div class="mt-2 flex flex-col items-center justify-center sm:flex-row">
+              <button 
+                class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
+                id="skills"
+                onclick="aboutMeButton('skills', 'skills-div')">
+                Skills
+              </button>
+              <button 
+                class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
+                id="education"
+                onclick="aboutMeButton('education', 'education-div')">
+                Education
+              </button>
+              <button 
+                class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
+                id="experience"
+                onclick="aboutMeButton('experience', 'experience-div')">
+                Experience
+              </button>
+              <button 
+                class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
+                id="languages"
+                onclick="aboutMeButton('languages', 'languages-div')">
+                Languages
+              </button>
+            </div>
             <div class="mt-8">
               <ul id="skills-div" class="pl-2 list-disc">
                 <li>Python</li>
@@ -181,10 +183,10 @@
       <section class="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id="contact">
         <div class="z-9">
           <h5 class="text-xl font-bold text-white my-2">
-            Do you have more questions?
+            Do you have any questions?
           </h5>
           <p class="text-[#ADB7BE] mb-4 max-w-md">
-            I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+            I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll get back to you as soon as possible!
           </p>
           <div class="flex flex-row gap-2">
             <a target="_blank" href="https://www.github.com/Kubab511"><img src="/assets/github-icon.svg" alt="Github Icon"></a>
