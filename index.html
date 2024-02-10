@@ -22,24 +22,15 @@
               <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
                 <a href="#projects">Projects</a>
               </li>
-              <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+              <li class="block py-2 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
                 <a href="#contact">Contact</a>
               </li>
-              <div class="flex flex-row justify-between items-center">
-                <li class="block mr-1 py-2 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                  <img class="h-7" src="/assets/globe.png" alt="globe">
-                </li>
-                <li>
-                  <select name="lang" class="block bg-[#191919] py-1 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded-full hover:text-white text-center hover:cursor-pointer">
-                    <option onclick="langChange(value)" selected value="en">English</option>
-                    <option onclick="langChange(value)" value="pl">Polski</option>
-                    <option onclick="langChange(value)" value="de">Deutsch</option>
-                    <option onclick="langChange(value)" value="no">Norsk</option>
-                    <option onclick="langChange(value)" value="ua">Українська</option>
-                    <option onclick="langChange(value)" value="ru">Русcкий</option>
-                  </select>
-                </li>
-              </div>
+              <li>
+                <button onclick="langChange('pl')" class="flex flex-row justify-center items-center py-1 px-3 text-[#ADB7BE] sm:text-xl rounded-full border-2 border-[#ADB7BE] hover:border-white hover:text-white">
+                  <img class="h-5 pr-3" src="/assets/globe.png" alt="globe">
+                  <span>PL</span>
+                </button>
+              </li>
             </ul>
           </div>
           <div class="block md:hidden">
@@ -65,21 +56,12 @@
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
             <a href="#contact">Contact</a>
           </li>
-          <div class="flex flex-row justify-between items-center">
-            <li class="block mr-1 py-2 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-              <img class="h-7" src="/assets/globe.png" alt="globe">
-            </li>
-            <li>
-              <select name="lang" class="block bg-[#191919] py-1 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded-full hover:text-white text-center hover:cursor-pointer">
-                <option onclick="langChange(value)" selected value="en">English</option>
-                <option onclick="langChange(value)" value="pl">Polski</option>
-                <option onclick="langChange(value)" value="de">Deutsch</option>
-                <option onclick="langChange(value)" value="no">Norsk</option>
-                <option onclick="langChange(value)" value="ua">Українська</option>
-                <option onclick="langChange(value)" value="ru">Русcкий</option>
-              </select>
-            </li>
-          </div>
+          <li>
+            <button onclick="langChange('pl')" class="flex flex-row justify-center items-center py-1 px-3 text-[#ADB7BE] sm:text-xl rounded-full border-2 border-[#ADB7BE] hover:border-white hover:text-white">
+              <img class="h-5 pr-3" src="/assets/globe.png" alt="globe">
+              <span>PL</span>
+            </button>
+          </li>
         </ul>
       </nav>
       <section class="lg:py-16">
