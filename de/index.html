@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="de" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,31 +17,30 @@
           <div class="menu hidden md:block md:w-auto" id="navbar">
             <ul class="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
               <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                <a href="#about">About</a>
+                <a href="#about">O Mnie</a>
               </li>
               <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                <a href="#projects">Projects</a>
+                <a href="#projects">Projekty</a>
               </li>
-              <li class="block py-2 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                <a href="#contact">Contact</a>
+              <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+                <a href="#contact">Kontakt</a>
               </li>
               <li>
                 <div class="group relative">
                   <p class="flex flex-row justify-center items-center text-[#ADB7BE] hover:text-white sm:text-xl hover:cursor-pointer">
-                    English <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Arrow down">
+                    Deutsch <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Strzałka w dół">
                   </p>
                   <div class="rounded px-2 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute -ml-4">
+                    <button onclick="langChange('en')" class="text-[#ADB7BE] hover:text-white">
+                      English
+                    </button>
                     <button onclick="langChange('pl')" class="text-[#ADB7BE] hover:text-white">
                       Polski
-                    </button>
-                    <button onclick="langChange('de')" class="text-[#ADB7BE] hover:text-white">
-                      Deutsch
                     </button>
                     <button onclick="langChange('no')" class="text-[#ADB7BE] hover:text-white">
                       Norsk
                     </button>
                   </div>
-                </div>
               </li>
             </ul>
           </div>
@@ -60,18 +59,18 @@
         </div>
         <ul id="mobile-menu" class="hidden flex-col py-4 items-center">
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-            <a href="#about">About</a>
+            <a href="#about">O Mnie</a>
           </li>
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-            <a href="#projects">Projects</a>
+            <a href="#projects">Projekty</a>
           </li>
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-            <a href="#contact">Contact</a>
+            <a href="#contact">Kontakt</a>
           </li>
           <li>
-            <button onclick="langChange('pl')" class="flex flex-row justify-center items-center py-1 px-4 text-white sm:text-xl rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800">
+            <button onclick="langChange('en')" class="flex flex-row justify-center items-center py-1 px-4 text-white sm:text-xl rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800">
               <img class="h-5 pr-3" src="/assets/globe.png" alt="globe">
-              PL
+              ENG
             </button>
           </li>
         </ul>
@@ -81,23 +80,23 @@
           <div class="col-span-8 place-self-center text-center sm:text-left justify-self-start">
             <h1 class="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-green-600">
-                Hi, I&apos;m<br>
+                Cześć, jestem<br>
               </span>
               Kuba
             </h1>
             <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-              A 1<sup>st</sup> year computer science student
+              Student informatyki 1 roku
             </p>
             <div>
-              <a class="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Email Me</a>
+              <a class="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 hover:bg-slate-200 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Napisz do mnie</a>
               <a class="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:bg-slate-800 text-white mt-3" target="_blank" href="/assets/resume.pdf">
                 <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
-                  Download CV
+                  Pobierz CV
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-span-4 place-self-center mt-4 ml-8 lg:mt-0 rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div class="col-span-4 place-self-center mt-4 ml-4 lg:mt-0 rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <img class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/assets/avatar.png" alt="Hero Image">
           </div>
         </div>
@@ -109,35 +108,35 @@
           <img class="rounded-2xl h-200 w-200" src="/assets/about-image.jpg" alt="About Image">
           <div class="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 class="text-4xl font-bold text-white mb-4">
-              About Me
+              O Mnie
             </h2>
             <p class="text-slate-400 lg:text-lg">
-              I&apos;m Kuba, a 19 year old computer science student at TU Dublin. My interests include cybersecurity and cryptography. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
+              Jestem Kuba, 19-letni student informatyki na TU Dublin. Moje zainteresowania to m.in. cyberbezpieczeństwo i kryptografia. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.
             </p>
             <div class="mt-2 flex flex-col items-center justify-center sm:flex-row">
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="skills"
                 onclick="aboutMeButton('skills', 'skills-div')">
-                Skills
+                Umiejętności
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="education"
                 onclick="aboutMeButton('education', 'education-div')">
-                Education
+                Wykształcenie
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="experience"
                 onclick="aboutMeButton('experience', 'experience-div')">
-                Experience
+                Doświadczenie
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="languages"
                 onclick="aboutMeButton('languages', 'languages-div')">
-                Languages
+                Języki
               </button>
             </div>
             <div class="mt-8">
@@ -148,17 +147,17 @@
                 <li>Rust</li>
               </ul>
               <ul id="education-div" class="pl-2 list-disc">
-                <li>BSc Computer Science - TU Dublin - 2023-2027</li>
-                <li>Leaving Certificate - Malahide Community School - 2023</li>
+                <li>Inżynier Informatyki - TU Dublin - 2023-2027</li>
+                <li>Leaving Certificate (Matura) - Malahide Community School - 2023</li>
               </ul>
               <ul id="experience-div" class="pl-2 list-disc">
-                <li>Scout Leader - Polish Scouting Association ZHP Irlandia</li>
+                <li>Drużynowy - ZHP Irlandia</li>
               </ul>
               <ul id="languages-div" class="pl-2 list-disc">
-                <li>Polish - Native</li>
-                <li>English - C2</li>
-                <li>German - B1</li>
-                <li>Norwegian - A2</li>
+                <li>Polski - Ojczysty</li>
+                <li>Angielski - C2</li>
+                <li>Niemiecki - B1</li>
+                <li>Norweski - A2</li>
               </ul>
             </div>
           </div>
@@ -169,22 +168,22 @@
         <br>
         <br>
         <h2 class="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-          My Projects
+          Moje Projekty
         </h2>
         <ul class="grid md:grid-cols-3 gap-8 md:gap-12">
           <li>
-            <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/1.png')] bg-center bg-cover"></div>
+            <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('../assets/projects/1.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">My Portfolio</h5>
-              <p class="text-center text-[#ADB7BE]">A portfolio made from scratch using html/tailwind/js</p>
+              <h5 class="text-xl font-semibold mb-2">Moje Portfolio</h5>
+              <p class="text-center text-[#ADB7BE]">Portfolio zrobione od zera za pomocą html/tailwind/js</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/kubab511.github.io">Github</a>
             </div>
           </li>
           <li>
             <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/2.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">My Leaving Cert Project</h5>
-              <p class="text-center text-[#ADB7BE]">A portfolio outlining my Leaving Cert 2023 project</p>
+              <h5 class="text-xl font-semibold mb-2">Mój projekt maturalny</h5>
+              <p class="text-center text-[#ADB7BE]">Portfolio z opisem mojego projektu maturalnego</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/lc-report-112081">Github</a>
             </div>
           </li>
@@ -195,10 +194,10 @@
       <section class="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id="contact">
         <div class="z-9">
           <h5 class="text-xl font-bold text-white my-2">
-            Do you have any questions?
+            Masz pytania?
           </h5>
           <p class="text-[#ADB7BE] mb-4 max-w-md">
-            I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll get back to you as soon as possible!
+            Obecnie szukam nowych możliwości, moja skrzynka email jest zawsze otwarta. Jeśli masz jakiekolwiek pytania, postaram się odpowiedzieć tak szybko, jak to możliwe!
           </p>
           <div class="flex flex-row gap-2">
             <a target="_blank" href="https://www.github.com/Kubab511"><img src="/assets/github-icon.svg" alt="Github Icon"></a>
