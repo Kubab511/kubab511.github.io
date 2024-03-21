@@ -68,16 +68,27 @@
             <a href="#contact">Kontakt</a>
           </li>
           <li>
-            <button onclick="langChange('en')" class="flex flex-row justify-center items-center py-1 px-4 text-white sm:text-xl rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800">
-              <img class="h-5 pr-3" src="/assets/globe.png" alt="globe">
-              ENG
-            </button>
+            <div class="group relative">
+              <p class="flex flex-row justify-center items-center text-[#ADB7BE] hover:text-white sm:text-xl hover:cursor-pointer">
+                Polski <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Strzałka w dół">
+              </p>
+              <div class="rounded px-2 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute -ml-4">
+                <button onclick="langChange('en')" class="text-[#ADB7BE] hover:text-white">
+                  English
+                </button>
+                <button onclick="langChange('de')" class="text-[#ADB7BE] hover:text-white">
+                  Deutsch
+                </button>
+                <button onclick="langChange('no')" class="text-[#ADB7BE] hover:text-white">
+                  Norsk
+                </button>
+              </div>
           </li>
         </ul>
       </nav>
       <section class="lg:py-16">
         <div class="grid grid-cols-1 sm:grid-cols-12">
-          <div class="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <div class="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start">
             <h1 class="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-green-600">
                 Cześć, jestem<br>
@@ -108,7 +119,7 @@
           <img class="rounded-2xl h-200 w-200" src="/assets/about-image.jpg" alt="About Image">
           <div class="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 class="text-4xl font-bold text-white mb-4">
-              O Mnie
+              O mnie
             </h2>
             <p class="text-slate-400 lg:text-lg">
               Jestem Kuba, 19-letni student informatyki na TU Dublin. Moje zainteresowania to m.in. cyberbezpieczeństwo i kryptografia. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.
@@ -145,7 +156,7 @@
                 <li>C</li>
               </ul>
               <ul id="education-div" class="pl-2 list-disc">
-                <li>Inżynier Informatyki - TU Dublin - 2023-2027</li>
+                <li>Inżynier Informatik - TU Dublin - 2023-2027</li>
                 <li>Leaving Certificate (Matura) - Malahide Community School - 2023</li>
               </ul>
               <ul id="experience-div" class="pl-2 list-disc">
@@ -180,7 +191,7 @@
           <li>
             <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/2.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">Mój projekt maturalny</h5>
+              <h5 class="text-xl font-semibold mb-2">Mój Projekt Maturalny</h5>
               <p class="text-center text-[#ADB7BE]">Portfolio z opisem mojego projektu maturalnego</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/lc-report-112081">Github</a>
             </div>

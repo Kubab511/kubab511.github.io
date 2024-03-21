@@ -69,16 +69,28 @@
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <button onclick="langChange('pl')" class="flex flex-row justify-center items-center py-1 px-4 text-white sm:text-xl rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800">
-              <img class="h-5 pr-3" src="/assets/globe.png" alt="globe">
-              PL
-            </button>
+            <div class="group relative">
+              <p class="flex flex-row justify-center items-center text-[#ADB7BE] hover:text-white sm:text-xl hover:cursor-pointer">
+                English <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Arrow down">
+              </p>
+              <div class="rounded px-2 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute">
+                <button onclick="langChange('pl')" class="text-[#ADB7BE] hover:text-white">
+                  Polski
+                </button>
+                <button onclick="langChange('de')" class="text-[#ADB7BE] hover:text-white">
+                  Deutsch
+                </button>
+                <button onclick="langChange('no')" class="text-[#ADB7BE] hover:text-white">
+                  Norsk
+                </button>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
       <section class="lg:py-16">
         <div class="grid grid-cols-1 sm:grid-cols-12">
-          <div class="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <div class="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start">
             <h1 class="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-green-600">
                 Hi, I&apos;m<br>

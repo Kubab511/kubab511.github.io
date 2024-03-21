@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no" class="scroll-smooth">
+<html lang="de" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,16 +68,27 @@
             <a href="#contact">Kontakt</a>
           </li>
           <li>
-            <button onclick="langChange('en')" class="flex flex-row justify-center items-center py-1 px-4 text-white sm:text-xl rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800">
-              <img class="h-5 pr-3" src="/assets/globe.png" alt="globe">
-              ENG
-            </button>
+            <div class="group relative">
+              <p class="flex flex-row justify-center items-center text-[#ADB7BE] hover:text-white sm:text-xl hover:cursor-pointer">
+                Norsk <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Strzałka w dół">
+              </p>
+              <div class="rounded px-2 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute -ml-4">
+                <button onclick="langChange('en')" class="text-[#ADB7BE] hover:text-white">
+                  English
+                </button>
+                <button onclick="langChange('pl')" class="text-[#ADB7BE] hover:text-white">
+                  Polski
+                </button>
+                <button onclick="langChange('de')" class="text-[#ADB7BE] hover:text-white">
+                  Deutsch
+                </button>
+              </div>
           </li>
         </ul>
       </nav>
       <section class="lg:py-16">
         <div class="grid grid-cols-1 sm:grid-cols-12">
-          <div class="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <div class="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start">
             <h1 class="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-green-600">
                 Hei, jeg heter<br>
@@ -85,13 +96,13 @@
               Kuba
             </h1>
             <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-              Student informatyki 1 roku
+              Student på 1. år i informatikk
             </p>
             <div>
-              <a class="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 hover:bg-slate-200 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Napisz do mnie</a>
+              <a class="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 hover:bg-slate-200 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Skriv til meg</a>
               <a class="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:bg-slate-800 text-white mt-3" target="_blank" href="/assets/resume.pdf">
                 <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
-                  Pobierz CV
+                  Last ned CV
                 </span>
               </a>
             </div>
@@ -108,56 +119,54 @@
           <img class="rounded-2xl h-200 w-200" src="/assets/about-image.jpg" alt="About Image">
           <div class="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 class="text-4xl font-bold text-white mb-4">
-              Om Meg
+              Om meg
             </h2>
             <p class="text-slate-400 lg:text-lg">
-              Jestem Kuba, 19-letni student informatyki na TU Dublin. Moje zainteresowania to m.in. cyberbezpieczeństwo i kryptografia. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.
+              Jeg heter Kuba, ein 19-jähriger Informatikstudent an der TU Dublin. Zu meinen Interessen gehören Cybersicherheit und Kryptographie. Ich studiere Informatik seit der Hauptschule, wo ich den Preis für den besten Informatikstudenten erhielt. In meiner Freizeit gehe ich gerne wandern, fotografieren und Ski fahren.
             </p>
             <div class="mt-2 flex flex-col items-center justify-center sm:flex-row">
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="skills"
                 onclick="aboutMeButton('skills', 'skills-div')">
-                Umiejętności
+                Fähigkeiten
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="education"
                 onclick="aboutMeButton('education', 'education-div')">
-                Wykształcenie
+                Bildung
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="experience"
                 onclick="aboutMeButton('experience', 'experience-div')">
-                Doświadczenie
+                Erlebnis
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="languages"
                 onclick="aboutMeButton('languages', 'languages-div')">
-                Języki
+                Sprachen
               </button>
             </div>
             <div class="mt-8">
               <ul id="skills-div" class="pl-2 list-disc">
                 <li>Python</li>
                 <li>C</li>
-                <li>Go</li>
-                <li>Rust</li>
               </ul>
               <ul id="education-div" class="pl-2 list-disc">
-                <li>Inżynier Informatyki - TU Dublin - 2023-2027</li>
-                <li>Leaving Certificate (Matura) - Malahide Community School - 2023</li>
+                <li>BSc Informatikk - TU Dublin - 2023-2027</li>
+                <li>Leaving Certificate (Vitnemål) - Malahide Community School - 2023</li>
               </ul>
               <ul id="experience-div" class="pl-2 list-disc">
-                <li>Drużynowy - ZHP Irlandia</li>
+                <li>Speiderleder - ZHP Irlandia</li>
               </ul>
               <ul id="languages-div" class="pl-2 list-disc">
-                <li>Polski - Ojczysty</li>
-                <li>Angielski - C2</li>
-                <li>Niemiecki - B1</li>
-                <li>Norweski - A2</li>
+                <li>Polsk - Morsmål</li>
+                <li>Engelsk - C2</li>
+                <li>Tysk - B1</li>
+                <li>Norsk - A2</li>
               </ul>
             </div>
           </div>
@@ -168,22 +177,22 @@
         <br>
         <br>
         <h2 class="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-          Moje Projekty
+          Mine Prosjekter
         </h2>
         <ul class="grid md:grid-cols-3 gap-8 md:gap-12">
           <li>
             <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('../assets/projects/1.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">Moje Portfolio</h5>
-              <p class="text-center text-[#ADB7BE]">Portfolio zrobione od zera za pomocą html/tailwind/js</p>
+              <h5 class="text-xl font-semibold mb-2">Porteføljen min</h5>
+              <p class="text-center text-[#ADB7BE]">Portefølje opprettet fra bunnen av med html/tailwind/js</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/kubab511.github.io">Github</a>
             </div>
           </li>
           <li>
             <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/2.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">Mój projekt maturalny</h5>
-              <p class="text-center text-[#ADB7BE]">Portfolio z opisem mojego projektu maturalnego</p>
+              <h5 class="text-xl font-semibold mb-2">Avgangsprosjektet mitt</h5>
+              <p class="text-center text-[#ADB7BE]">Porteføljen med beskrivelse av avgangsprosjektet mitt</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/lc-report-112081">Github</a>
             </div>
           </li>
@@ -194,10 +203,10 @@
       <section class="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id="contact">
         <div class="z-9">
           <h5 class="text-xl font-bold text-white my-2">
-            Masz pytania?
+            Har du noen spørsmål?
           </h5>
           <p class="text-[#ADB7BE] mb-4 max-w-md">
-            Obecnie szukam nowych możliwości, moja skrzynka email jest zawsze otwarta. Jeśli masz jakiekolwiek pytania, postaram się odpowiedzieć tak szybko, jak to możliwe!
+            Jeg er for tiden på utkikk etter nye muligheter, og innboksen min er alltid åpen. Enten du har et spørsmål eller bare vil si hei, tar jeg kontakt med deg så snart som mulig!
           </p>
           <div class="flex flex-row gap-2">
             <a target="_blank" href="https://www.github.com/Kubab511"><img src="/assets/github-icon.svg" alt="Github Icon"></a>
