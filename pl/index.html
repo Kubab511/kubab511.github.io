@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="pl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +17,22 @@
           <div class="menu hidden md:block md:w-auto" id="navbar">
             <ul class="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
               <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                <a href="#about">About Me</a>
+                <a href="#about">O mnie</a>
               </li>
               <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                <a href="#projects">Projects</a>
+                <a href="#projects">Projekty</a>
               </li>
-              <li class="block py-2 pl-3 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-                <a href="#more">More</a>
+              <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
+                <a href="#more">Więcej</a>
               </li>
               <li>
                 <div class="group relative">
                   <p class="flex flex-row justify-center items-center text-[#ADB7BE] hover:text-white sm:text-xl hover:cursor-pointer">
-                    English <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Arrow down">
+                    Polski <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Strzałka w dół">
                   </p>
                   <div class="rounded px-4 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute -ml-4">
-                    <button onclick="langChange('pl')" class="text-[#ADB7BE] py-2 hover:text-white">
-                      Polski
+                    <button onclick="langChange('en')" class="text-[#ADB7BE] py-2 hover:text-white">
+                      English
                     </button>
                     <button onclick="langChange('de')" class="text-[#ADB7BE] py-2 hover:text-white">
                       Deutsch
@@ -41,7 +41,6 @@
                       Norsk
                     </button>
                   </div>
-                </div>
               </li>
             </ul>
           </div>
@@ -60,22 +59,22 @@
         </div>
         <ul id="mobile-menu" class="hidden flex-col py-4 items-center">
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-            <a href="#about">About Me</a>
+            <a href="#about">O mnie</a>
           </li>
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-            <a href="#projects">Projects</a>
+            <a href="#projects">Projekty</a>
           </li>
           <li class="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer">
-            <a href="#more">More</a>
+            <a href="#more">Więcej</a>
           </li>
           <li class="py-2">
             <div class="group relative">
               <p class="flex flex-row justify-center items-center text-[#ADB7BE] hover:text-white sm:text-xl hover:cursor-pointer">
-                English <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Arrow down">
+                Polski <img class="h-5 w-5  ml-2" src="/assets/arrow-down.png" alt="Strzałka w dół">
               </p>
-              <div class="rounded px-2 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute">
-                <button onclick="langChange('pl')" class="text-[#ADB7BE] py-2 hover:text-white">
-                  Polski
+              <div class="rounded px-2 sm:text-xl bg-black hidden group-hover:block fixed hover:cursor-pointer max-w-xs absolute -ml-4">
+                <button onclick="langChange('en')" class="text-[#ADB7BE] py-2 hover:text-white">
+                  English
                 </button>
                 <button onclick="langChange('de')" class="text-[#ADB7BE] py-2 hover:text-white">
                   Deutsch
@@ -84,7 +83,6 @@
                   Norsk
                 </button>
               </div>
-            </div>
           </li>
         </ul>
       </nav>
@@ -93,18 +91,18 @@
           <div class="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start">
             <h1 class="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-green-600">
-                Hi, I&apos;m<br>
+                Cześć, jestem<br>
               </span>
               Kuba
             </h1>
             <p class="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-              A 2<sup>nd</sup> year computer science student
+              Student informatyki 2 roku
             </p>
             <div>
-              <a class="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Email Me</a>
+              <a class="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 hover:bg-slate-200 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Napisz do mnie</a>
               <a class="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:bg-slate-800 text-white mt-3" target="_blank" href="/assets/resume.pdf">
                 <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
-                  Download CV
+                  Pobierz CV
                 </span>
               </a>
             </div>
@@ -120,39 +118,39 @@
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
           <figure>
             <img class="rounded-2xl h-200 w-200" src="/assets/sk-export-32.jpg" alt="About Image">
-            <figcaption class="text-center text-slate-400 text-lg">Roháčske plesá - Slovakia &#128247; Jakub Barabasz</figcaption>
+            <figcaption class="text-center text-slate-400 text-lg">Roháčske plesá - Słowacja &#128247; Jakub Barabasz</figcaption>
           </figure>
           <div class="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 class="text-4xl font-bold text-white mb-4">
-              About Me
+              O mnie
             </h2>
             <p class="text-slate-400 lg:text-lg">
-              I&apos;m Kuba, a 19 year old computer science student at TU Dublin. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
+              Jestem Kuba, 19-letni student informatyki na TU Dublin. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.
             </p>
             <div class="mt-2 flex flex-col items-center justify-center sm:flex-row">
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="skills"
                 onclick="aboutMeButton('skills', 'skills-div')">
-                Skills
+                Umiejętności
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="education"
                 onclick="aboutMeButton('education', 'education-div')">
-                Education
+                Wykształcenie
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="experience"
                 onclick="aboutMeButton('experience', 'experience-div')">
-                Experience
+                Doświadczenie
               </button>
               <button 
                 class="pr-2 mt-2 underline decoration-2 font-bold text-slate-400 hover:text-white" 
                 id="languages"
                 onclick="aboutMeButton('languages', 'languages-div')">
-                Languages
+                Języki
               </button>
             </div>
             <div class="mt-8">
@@ -161,18 +159,18 @@
                 <li>C</li>
               </ul>
               <ul id="education-div" class="pl-2 list-disc">
-                <li>BSc Computer Science - TU Dublin - 2023-2027</li>
-                <li>Leaving Certificate - Malahide Community School - 2023</li>
+                <li>Inżynier Informatyki - TU Dublin - 2023-2027</li>
+                <li>Leaving Certificate (Matura) - Malahide Community School - 2023</li>
               </ul>
               <ul id="experience-div" class="pl-2 list-disc">
-                <li><a target="_blank" class="underline text-slate-400 hover:text-white" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader</li>
-                <li><a target="_blank" class="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish Translation</li>
+                <li><a target="_blank" class="underline text-slate-400 hover:text-white" href="https://zhp.ie/">ZHP Irlandia</a> - Drużynowy</li>
+                <li><a target="_blank" class="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polskie tłumaczenie</li>
               </ul>
               <ul id="languages-div" class="pl-2 list-disc">
-                <li>Polish - Native</li>
-                <li>English - C2</li>
-                <li>German - B1</li>
-                <li>Norwegian - A2</li>
+                <li>Polski - Ojczysty</li>
+                <li>Angielski - C2</li>
+                <li>Niemiecki - B1</li>
+                <li>Norweski - A2</li>
               </ul>
             </div>
           </div>
@@ -183,22 +181,22 @@
         <br>
         <br>
         <h2 class="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-          My Projects
+          Moje Projekty
         </h2>
         <ul class="grid md:grid-cols-3 gap-8 md:gap-12">
           <li>
-            <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/1.png')] bg-center bg-cover"></div>
+            <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('../assets/projects/1.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">My Portfolio</h5>
-              <p class="text-center text-[#ADB7BE]">A portfolio made from scratch using html/tailwind/js</p>
+              <h5 class="text-xl font-semibold mb-2">Moje Portfolio</h5>
+              <p class="text-center text-[#ADB7BE]">Portfolio zrobione od zera za pomocą html/tailwind/js</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/kubab511.github.io">Github</a>
             </div>
           </li>
           <li>
             <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/2.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl bg-[#181818] py-6 px-4">
-              <h5 class="text-xl font-semibold mb-2">My Leaving Cert Project</h5>
-              <p class="text-center text-[#ADB7BE]">A portfolio outlining my Leaving Cert 2023 project</p>
+              <h5 class="text-xl font-semibold mb-2">Mój Projekt Maturalny</h5>
+              <p class="text-center text-[#ADB7BE]">Opis mojego projektu maturalnego</p>
               <a class="mt-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/lc-report-112081">Github</a>
             </div>
           </li>
@@ -206,7 +204,7 @@
             <div class="h-52 md:h-72 rounded-t-xl relative group bg-[url('/assets/projects/3.png')] bg-center bg-cover"></div>
             <div class="flex justify-center items-center flex-col text-white rounded-b-xl bg-[#181818] py-6 px-4">
               <h5 class="text-xl font-semibold mb-2">JBX Profiles</h5>
-              <p class="text-center text-[#ADB7BE]">A responsive website made in react using TypeScript</p>
+              <p class="text-center text-[#ADB7BE]">Strona internetowa zrobiona w React&apos;ie za pomocą TypeScripta</p>
               <div class="flex flex-row">
                 <a class="mt-1 mr-1 text-slate-400 underline hover:text-white" target="_blank" href="https://github.com/Kubab511/jbx-profiles">Github</a>
                 <a class="mt-1 ml-1 text-slate-400 underline hover:text-white" target="_blank" href="https://jbx-profiles.com/">Link</a>
@@ -220,10 +218,10 @@
       <section class="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id="more">
         <div class="z-9">
           <h5 class="text-xl font-bold text-white my-2">
-            Want to know more?
+            Chcesz wiedzieć więcej?
           </h5>
           <p class="text-[#ADB7BE] mb-4 max-w-md">
-            If you&apos;d like to know more about me, check out my LinkedIn, GitHub and Instagram profiles
+            Jeśli chciał(a)byś dowiedzieć się więcej o mnie, zobacz moje profile na LinkedInie, GitHubie i Instagramie
           </p>
           <div class="flex flex-row gap-3">
             <a target="_blank" href="https://www.linkedin.com/in/kuba-barabasz/"><img class="w-10 h-10 scale-75 hover:scale-100 transform transition duration-250" src="/assets/linkedin-icon.png" alt="Linkedin Icon"></a>
